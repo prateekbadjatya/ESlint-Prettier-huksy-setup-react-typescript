@@ -14,6 +14,22 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+
+##npm init @eslint/config
+
+## Command to run linting
+npm run lint:fix
+
+## prettier Installation
+
+npm i prettier eslint-config-prettier eslint-plugin-prettier --save-dev
+
+## Install husky pre commit
+npx husky-init && npm install
+
+## Command to Run before commit
+npx husky set .\.husky\pre-commit "npm run lint:fix"
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
